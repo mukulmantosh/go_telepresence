@@ -20,6 +20,9 @@ spec:
           ports:
             - containerPort: 8080
           imagePullPolicy: Never
+          env:
+            - name: ENV
+              value: "production"
 ---
 apiVersion: v1
 kind: Service
